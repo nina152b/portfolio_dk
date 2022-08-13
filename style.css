@@ -6,15 +6,15 @@ img {
 .menu {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
-a {
+.menu a {
   color: #262526;
-  text-shadow: 1px 1px #bebdbf;
   justify-content: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 a:hover {
@@ -76,33 +76,8 @@ a:hover {
 }
 
 /*__________________________________________Personligt arbejde________________________________________*/
-#knapperne {
-  display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
 
-.personnel_knap {
-  background-image: url(billeder/personnel_knap.webp);
-  border: none;
-  border-radius: 2%;
-  color: none;
-  background-color: #f2f2f2;
-  padding: 40px 150px;
-  text-decoration: none;
-  font-size: 12px;
-  transition-duration: 0.6s;
-  cursor: pointer;
-  margin: 20px;
-}
-
-.personlig_box_knap {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/*__________________________________________Perofesionnelt arbejde________________________________________*/
+/*__________________________________________Profesionnelt arbejde________________________________________*/
 .slideshow-container {
   max-width: 350px;
   position: relative;
@@ -143,9 +118,18 @@ a:hover {
 }
 
 /*__________________________________________KEA ARBEJDE________________________________________*/
+video {
+  width: 70%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+
+  aspect-ratio: 16/9;
+}
+
 .video_grob {
-  display: grid;
+  display: flex;
   justify-content: center;
-  padding-top: 40%;
-  width: 100%;
 }
