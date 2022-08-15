@@ -320,3 +320,104 @@ video {
   display: flex;
   justify-content: center;
 }
+
+/* Til knapperne der fører hen til gamle opgaver */
+
+/*Knap til første hjemmeside*/
+.tema_2_opgave {
+  border: none;
+  border-radius: 5%;
+  background-color: #f2f2f2;
+  padding: 60px 130px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.tema_2_opgave:hover {
+  background-image: url(billeder/venus_portrait_original.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 40%;
+  opacity: 50%;
+}
+.placer_knap_t2 {
+  display: grid;
+  justify-content: center;
+}
+
+/*Knap til anden hjemmeside */
+
+.portfolio_eksamen {
+  border: none;
+  border-radius: 5%;
+  background-color: #f2f2f2;
+  padding: 60px 130px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.portfolio_eksamen:hover {
+  background-image: url(billeder/gradient_man_2_under.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 40%;
+  opacity: 50%;
+}
+
+/* Knap til spillet */
+
+.spil_knappen {
+  border: none;
+  border-radius: 5%;
+  background-color: #f2f2f2;
+  padding: 60px 130px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.spil_knappen:hover {
+  background-image: url(billeder/fransk_spil.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 40%;
+  opacity: 50%;
+}
+
+/* Knap til den sidste hjemmeside */
+
+.kunde_hjemmeside {
+  border: none;
+  border-radius: 5%;
+  background-color: #f2f2f2;
+  padding: 60px 130px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.kunde_hjemmeside:hover {
+  background-image: url(billeder/entilen2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 40%;
+  opacity: 50%;
+}
