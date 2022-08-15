@@ -321,103 +321,238 @@ video {
   justify-content: center;
 }
 
+/* Knapperne i mobil størrelse */
+@media (max-width: 700px) {
+  #hjemmesider_skole {
+    display: grid;
+    justify-content: center;
+  }
+
+  /*første hjemmeside*/
+  .tema_2_opgave {
+    border: none;
+    border-radius: 12%;
+    color: #032623;
+    background-color: #f2f2f2;
+    padding: 40px 150px;
+    text-decoration: none;
+    font-size: 12px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    box-shadow: 4px 3px;
+    margin: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .placer_knap_1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /*anden hjemmeside*/
+  .portfolio_eksamen {
+    border: none;
+    border-radius: 12%;
+    color: #032623;
+    background-color: #f2f2f2;
+    padding: 40px 150px;
+    text-decoration: none;
+    font-size: 12px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    box-shadow: 4px 3px;
+    margin: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .placer_knap_2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /*til spilelt */
+  .spil_knappen {
+    border: none;
+    border-radius: 12%;
+    color: #032623;
+    background-color: #f2f2f2;
+    padding: 40px 150px;
+    text-decoration: none;
+    font-size: 12px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    box-shadow: 4px 3px;
+    margin: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .placer_knap_3 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /*sidste hjemmeside */
+
+  .kunde_hjemmeside {
+    border: none;
+    border-radius: 12%;
+    color: #032623;
+    background-color: #f2f2f2;
+    padding: 40px 150px;
+    text-decoration: none;
+    font-size: 12px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    box-shadow: 4px 3px;
+    margin: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .placer_knap_4 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 /* Til knapperne der fører hen til gamle opgaver */
 
-/*Knap til første hjemmeside*/
-.tema_2_opgave {
-  border: none;
-  border-radius: 5%;
-  background-color: #f2f2f2;
-  padding: 60px 130px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.6s;
-  cursor: pointer;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
+@media (min-width: 600px) {
+  #hjemmesider_skole {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+  }
 
-.tema_2_opgave:hover {
-  background-image: url(billeder/venus_portrait_original.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20% 40%;
-  opacity: 50%;
-}
-.placer_knap_t2 {
-  display: grid;
-  justify-content: center;
-}
+  /*Knap til første hjemmeside*/
+  .tema_2_opgave {
+    border: none;
+    border-radius: 5%;
+    background-color: #f2f2f2;
+    padding: 60px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 80px;
+    height: 10px;
+  }
 
-/*Knap til anden hjemmeside */
+  .tema_2_opgave:hover {
+    background-image: url(billeder/venus_portrait_original.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
 
-.portfolio_eksamen {
-  border: none;
-  border-radius: 5%;
-  background-color: #f2f2f2;
-  padding: 60px 130px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.6s;
-  cursor: pointer;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
+  .placer_knap_1 {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 
-.portfolio_eksamen:hover {
-  background-image: url(billeder/gradient_man_2_under.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20% 40%;
-  opacity: 50%;
-}
+  /*Knap til anden hjemmeside */
 
-/* Knap til spillet */
+  .portfolio_eksamen {
+    border: none;
+    border-radius: 5%;
+    background-color: #f2f2f2;
+    padding: 60px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 80px;
+    height: 10px;
+  }
 
-.spil_knappen {
-  border: none;
-  border-radius: 5%;
-  background-color: #f2f2f2;
-  padding: 60px 130px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.6s;
-  cursor: pointer;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
+  .portfolio_eksamen:hover {
+    background-image: url(billeder/gradient_man_2_under.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
 
-.spil_knappen:hover {
-  background-image: url(billeder/fransk_spil.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20% 40%;
-  opacity: 50%;
-}
+  .placer_knap_2 {
+    display: grid;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-/* Knap til den sidste hjemmeside */
+  /* Knap til spillet */
 
-.kunde_hjemmeside {
-  border: none;
-  border-radius: 5%;
-  background-color: #f2f2f2;
-  padding: 60px 130px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.6s;
-  cursor: pointer;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
+  .spil_knappen {
+    border: none;
+    border-radius: 5%;
+    background-color: #f2f2f2;
+    padding: 60px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 80px;
+    height: 10px;
+  }
 
-.kunde_hjemmeside:hover {
-  background-image: url(billeder/entilen2.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20% 40%;
-  opacity: 50%;
+  .spil_knappen:hover {
+    background-image: url(billeder/fransk_spil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
+
+  .placer_knap_3 {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  /* Knap til den sidste hjemmeside */
+
+  .kunde_hjemmeside {
+    border: none;
+    border-radius: 5%;
+    background-color: #f2f2f2;
+    padding: 60px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 80px;
+    height: 10px;
+  }
+
+  .kunde_hjemmeside:hover {
+    background-image: url(billeder/entilen2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
+
+  .placer_knap_4 {
+    display: grid;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
