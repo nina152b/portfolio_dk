@@ -21,6 +21,13 @@ a:hover {
   color: #ff6143;
 }
 
+html {
+  background-image: url(billeder/lille_baggrund@4x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*__________________________________________Menu knap________________________________________*/
 
 /*_________________________________________OM MIG SIDEN________________________________________*/
@@ -265,6 +272,19 @@ a:hover {
 }
 
 /*__________________________________________Profesionnelt arbejde________________________________________*/
+
+#inspiration_afsnit3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.forklaring_mapoule {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+/* til slide-showet */
 .slideshow-container {
   max-width: 350px;
   position: relative;
@@ -555,4 +575,38 @@ video {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+/*______________________________________________PRAKTIK_________________________________*/
+
+/* Til billederne af opslagene */
+#images_institut {
+  display: flex;
+}
+
+.les_images img {
+  width: 30%;
+}
+
+.les_images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Til videoerne som er blevet produceret */
+
+#videos_institut {
+  display: flex;
+  margin-top: 40px;
+}
+
+.les_videos video {
+  width: 600px;
+}
+
+.les_videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 90px;
 }
