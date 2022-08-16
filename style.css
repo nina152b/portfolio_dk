@@ -1,4 +1,6 @@
 /*__________________________________________Generelt________________________________________*/
+/* HUSK AT LAVE FONTE */
+
 img {
   width: 100%;
 }
@@ -44,28 +46,89 @@ html {
 @media (max-width: 700px) {
   #valg_knap {
     display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .knap_prof_front {
     border: none;
-    border-radius: 12%;
     color: #032623;
-    background-color: #f2f2f2;
     padding: 40px 150px;
     transition-duration: 0.6s;
     cursor: pointer;
-    box-shadow: 4px 3px;
-    background-image: url(billeder/Skole.png);
+    background-image: url(billeder/Prof.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: 20% 40%;
     opacity: 50%;
   }
 
   .placer_knap_prof {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .knap_praktik_front {
+    border: none;
+    color: #032623;
+    padding: 40px 150px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    background-image: url(billeder/Praktik.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
+
+  .placer_knap_praktik {
+    display: grid;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .knap_skole_front {
+    border: none;
+    color: #032623;
+    padding: 40px 150px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    background-image: url(billeder/Skole.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
+
+  .placer_knap_skole {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .knap_nina_front {
+    border: none;
+    color: #032623;
+    padding: 40px 150px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    background-image: url(billeder/nina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20% 40%;
+    opacity: 50%;
+  }
+
+  .placer_knap_nina {
+    display: grid;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 /*__________________________________________Menu knap________________________________________*/
