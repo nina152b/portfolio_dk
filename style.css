@@ -23,14 +23,12 @@ a:hover {
   color: #ff6143;
 }
 
-/*
 html {
-  background-image: url(billeder/lille_baggrund@4x.png);
+  background-image: url(billeder/footer_baggrund@4x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-*/
 
 /*_________________________________________FRONT PAGE___________________________________________*/
 
@@ -216,10 +214,27 @@ html {
 }
 
 /*__________________________________________FOOTER________________________________________*/
+#footer_info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+
 .footer_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nina_logo {
   width: 45px;
   height: 45px;
 }
+
+.footer_box {
+  display: flex;
+  gap: 15px;
+}
+
 /*__________________________________________Menu knap________________________________________*/
 
 /*_________________________________________OM MIG SIDEN________________________________________*/
