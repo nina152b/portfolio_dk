@@ -53,6 +53,16 @@ h1 {
 
 /*_________________________________________FRONT PAGE___________________________________________*/
 
+.opsaetning_h1_front_page {
+  position: absolute;
+  top: 12%;
+  left: 1%;
+}
+.forklarende_tekst_front_page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 /* MOBIL UDGAVE */
 @media (max-width: 600px) {
   #valg_knap {
