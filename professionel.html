@@ -18,16 +18,25 @@
             </div>
           </a>
           <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="professionel.html">Professionelt</a>
-            <a href="praktik.html">Praktik</a>
-            <a href="kea.html">Skole</a>
-            <a href="mig.html">Om mig</a>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="professionel.html">Professionelt</a></li>
+              <li><a href="praktik.html">Praktik</a></li>
+              <li><a href="kea.html">Skole</a></li>
+              <li>
+                <a href="mig.html" aria-haspopup="true">Om mig</a>
+                <ul class="dropdown" aria-label="submenu">
+                  <li>
+                    <a href="mig.html#mes_propres_photos">Billedgaleri</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <main>
       <h1>Profesionnel erfaring</h1>
       <div class="box_lille_ikon">
@@ -37,7 +46,7 @@
       </div>
       <section id="inspiration_afsnit3">
         <div class="forklaring_mapoule">
-          <p>
+          <p class="styling_forklaring_mapoule">
             Mellem Januar 2018 og Oktober 2019 var jeg ansat som
             kommunikationsmanager på Ma Poule, Torvehallerne (København,
             Danmark), hvor jeg fik opgaven af, at skulle starte forretningens

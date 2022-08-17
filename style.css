@@ -1,25 +1,9 @@
 /*__________________________________________Generelt________________________________________*/
+
 /* HUSK AT LAVE FONTE */
 
 img {
   width: 100%;
-}
-
-.menu {
-  display: flex;
-  justify-content: right;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  margin: 20px;
-  gap: 15px;
-}
-
-.menu a {
-  color: #262526;
-  justify-content: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.5rem;
 }
 
 a:hover {
@@ -40,15 +24,21 @@ h1 {
   margin-bottom: 40px;
 }
 
+/* le petit soleil  */
 .lille_ikon {
   width: 45px;
   height: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
+/* le petit soleil*/
 .box_lille_ikon {
   display: flex;
   justify-content: center;
+}
+
+p {
+  line-height: 1.7;
 }
 
 /*_________________________________________FRONT PAGE___________________________________________*/
@@ -262,6 +252,23 @@ h1 {
   gap: 15px;
 }
 
+/*__________________________________________MENU GENERELT________________________________________*/
+
+.menu {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 40px;
+  margin: 20px;
+  gap: 15px;
+}
+
+.menu a {
+  color: #262526;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
 /*__________________________________________Menu knap________________________________________*/
 
 /*menu opstilling til mobil */
@@ -306,6 +313,10 @@ h1 {
     font-size: 0.7rem;
     text-decoration: none;
   }
+
+  a:hover {
+    color: #ff6143;
+  }
   .menu {
     display: flex;
     justify-content: center;
@@ -316,8 +327,7 @@ h1 {
     gap: 5px;
     list-style: none;
     justify-content: center;
-    margin-bottom: 120px;
-    margin-top: 30px;
+    justify-content: right;
   }
 }
 
@@ -343,8 +353,6 @@ h1 {
     gap: 5px;
     list-style: none;
     justify-content: center;
-    margin-bottom: 120px;
-    margin-top: 30px;
   }
 
   #menu li {
@@ -352,6 +360,79 @@ h1 {
   }
 }
 
+/*_________til drop down menuen */
+
+@media only screen and (min-width: 600px) {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li:focus-within a {
+    outline: none;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+}
 /*_________________________________________OM MIG SIDEN________________________________________*/
 
 .vaerkstoejs_kasse {
@@ -607,6 +688,10 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin: 30px;
+}
+
+.styling_forklaring_mapoule {
+  width: 400px;
 }
 
 /* til slide-showet */

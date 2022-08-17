@@ -18,11 +18,21 @@
             </div>
           </a>
           <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="professionel.html">Professionelt</a>
-            <a href="praktik.html">Praktik</a>
-            <a href="kea.html">Skole</a>
-            <a href="mig.html">Om mig</a>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="professionel.html">Professionelt</a></li>
+              <li><a href="praktik.html">Praktik</a></li>
+              <li><a href="kea.html">Skole</a></li>
+              <li>
+                <a href="mig.html" aria-haspopup="true">Om mig</a>
+                <ul class="dropdown" aria-label="submenu">
+                  <li>
+                    <a href="mig.html#mes_propres_photos">Billedgaleri</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -146,7 +156,7 @@
           <img src="billeder/soleil@4x.png" alt="ikon" />
         </div>
       </div>
-      <section class="mes_propres_photos">
+      <section id="mes_propres_photos">
         <h1>Billed galleri</h1>
         <p>
           Jeg holder meget af, at tage billeder. Herunder ses en håndfuld af
