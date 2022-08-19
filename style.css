@@ -65,13 +65,14 @@ p {
   .knap_prof_front {
     border: none;
     color: #032623;
-
+    z-index: 100%;
     transition-duration: 0.6s;
     cursor: pointer;
     background-image: url(billeder/Prof.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 20% 40%;
+    position: relative;
   }
 
   .placer_knap_prof {
@@ -230,44 +231,97 @@ p {
 }
 
 /*__________________________________________FOOTER________________________________________*/
-#footer_info {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 150px;
-  padding-bottom: 30px;
+
+@media only screen and (max-width: 600px) {
+  #footer_info {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .footer_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nina_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer_box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .kontakt_info {
+    width: 40px;
+  }
 }
 
-.footer_icon {
-  width: 30px;
-  height: 30px;
-}
+@media only screen and (min-width: 600px) {
+  #footer_info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
 
-.nina_logo {
-  width: 45px;
-  height: 45px;
-}
+  .footer_icon {
+    width: 30px;
+    height: 30px;
+  }
 
-.footer_box {
-  display: flex;
-  gap: 15px;
+  .nina_logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer_box {
+    display: flex;
+    gap: 15px;
+  }
 }
 
 /*__________________________________________MENU GENERELT________________________________________*/
 
-.menu {
-  display: flex;
-  justify-content: right;
-  padding-bottom: 40px;
-  margin: 20px;
-  gap: 15px;
+/*Mobil*/
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    gap: 5px;
+  }
+
+  .menu a {
+    color: #262526;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 }
 
-.menu a {
-  color: #262526;
-  justify-content: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.5rem;
+/* desktop*/
+@media only screen and (min-width: 600px) {
+  .menu {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 40px;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .menu a {
+    color: #262526;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 }
 /*__________________________________________Menu knap________________________________________*/
 
@@ -1008,6 +1062,7 @@ video {
 
 #videos_institut {
   display: flex;
+  justify-content: center;
   margin-top: 40px;
 }
 
@@ -1018,5 +1073,25 @@ video {
 .les_videos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 90px;
+}
+
+.tekst_om_praktik {
+  width: 700px;
+  margin-top: 30px;
+}
+
+.texte_intro_institut {
+  display: flex;
+  justify-content: center;
+}
+
+.explication_photos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.explication_videos {
+  display: flex;
+  justify-content: center;
 }
