@@ -22,6 +22,16 @@ h1 {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  font-family: "Advent Pro", sans-serif;
+}
+
+h2 {
+  font-family: "Advent Pro", sans-serif;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  margin-left: 10px;
 }
 
 /* le petit soleil  */
@@ -39,6 +49,11 @@ h1 {
 
 p {
   line-height: 1.7;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
 }
 
 /*_________________________________________FRONT PAGE___________________________________________*/
@@ -731,6 +746,16 @@ p {
   }
 }
 
+.tekst_til_billederne {
+  display: flex;
+  justify-content: center;
+}
+
+.hello_galleri {
+  width: 550px;
+  margin-bottom: 70px;
+}
+
 /*__________________________________________Profesionnelt arbejde________________________________________*/
 
 #inspiration_afsnit3 {
@@ -803,6 +828,7 @@ video {
 .video_grob {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 /* Knapperne i mobil størrelse */
@@ -1039,6 +1065,16 @@ video {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+.tekst_om_kea {
+  display: flex;
+  justify-content: center;
+}
+
+.tekst_kea {
+  width: 700px;
+  margin-bottom: 70px;
 }
 
 /*______________________________________________PRAKTIK_________________________________*/
